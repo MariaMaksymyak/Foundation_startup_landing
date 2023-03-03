@@ -509,7 +509,8 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        margin-left: 235px;
+        gap: 15px;
+        max-width: 300px;
     }
     .flex__inbox-colomn{
         flex-direction: column-reverse;
@@ -643,6 +644,10 @@ body{
         background-color: #FFFFFF;
         padding: 8px 0;
     }
+
+    .main_img{
+        max-width: 300px;
+    }
     .information{
        padding: 0;
     }
@@ -650,9 +655,12 @@ body{
         margin: 46px 15px 20px 15px
     }
     .customers_logo_grid{
-        margin: 0;
-        max-width: 80px;
-        width: 100%;
+        margin-left: 10 px;
+        padding: 0;
+    }
+
+    .customers_logo-colmn{
+        width: 50px;
     }
 
     .logo_img{
