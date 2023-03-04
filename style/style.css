@@ -509,8 +509,7 @@ body{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
-        max-width: 300px;
+        margin-left: 235px;
     }
     .flex__inbox-colomn{
         flex-direction: column-reverse;
@@ -558,6 +557,26 @@ body{
         margin: 0 auto 41px;
         text-align: center;
     }
+
+
+    .trial_title{
+        max-width: 325px;
+        font-size: 48px;
+        line-height: 40px;
+        margin-left: 120px;
+        text-align: center;
+    }
+    .trial_text, .form_trial, .trial_checkbox{
+        text-align: center;
+    }
+
+    .input_free_trial, .button{
+        width: 190px;
+        margin-bottom: 20px;
+    }
+
+
+
     .grid_surface{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -600,6 +619,29 @@ body{
     .inbox_response{
         margin-bottom: 50px;
     }
+    .customers_logo_grid{
+        margin-left: 180px;
+    }
+    .surfaces{
+        margin-left: 30px;}
+    
+    .surfaces_title{
+        text-align: center;
+    }
+        
+    .surfaces_title{
+        margin-left: 240px;
+    }
+    .surfaces_text{
+        margin-left: 240px;
+    }
+    .trial_info_title{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .grid_cards{
+       justify-content: center;
+    }
 }
 
 @media screen and (max-width: 550px){
@@ -613,6 +655,39 @@ body{
     .info_pretitle{
         margin-bottom: 20px;
     }
+    .main_img{
+        width: 500px;
+    }
+    .information{
+        margin: 0;
+        padding: 0;
+    }
+    .customers_logo_grid{
+        margin-left: 90px;
+}
+.grid_surface{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7,1fr);
+    gap: 17px;
+}
+.item:nth-child(2){
+    display: none;
+}
+.item:nth-child(4){
+    grid-row: 2/4;
+}
+.item:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+.card {
+   max-width: 180px;
+   width:  100%;
+   height: 280px;
+}
+.grid_cards{
+    gap: 10px 30px;
+}
 }
 
 @media screen and (max-width: 480px){
@@ -634,7 +709,56 @@ body{
     .container{
         max-width: 300px ;
     }
+    .main_title{
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    }
+    .main_text{
+    font-size: 24px;
+    line-height: 34px;
+    }
+    .button, .button_white{
+        width: 290px;
+    }
+    .main_img{
+        width: 350px;
+    }
+    .customers_logo_grid{
+        margin: 0;
+        max-width: 80px;
+        width: 100%;
+    }
+
+    .logo_img{
+        margin-right: 13px;
+    }
+
+    .grid_cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        gap: 17px;
+    }
+    .card:nth-child(1){
+        grid-row: 1/4;
+        grid-column: 1/1;
+    }
+    .card:nth-child(2){
+        grid-row: 2/4;
+        grid-column: 1/1;
+    }
+    .card:nth-child(3){
+        grid-row: 3/4;
+        grid-column: 1/1;
+    }
+    .card:nth-child(4){
+        grid-row: 4/4;
+        grid-column: 1/1;
+    }
 }
+    
+
+
 
 @media screen and (max-width: 320px) {
     .container{
@@ -644,35 +768,17 @@ body{
         background-color: #FFFFFF;
         padding: 8px 0;
     }
-
-    .main_img{
-        max-width: 300px;
-    }
-    .information{
-       padding: 0;
-    }
+   
     .question_first, .question_second{
         margin: 46px 15px 20px 15px
     }
-    .customers_logo_grid{
-        margin-left: 10 px;
-        padding: 0;
-    }
-
-    .customers_logo-colmn{
-        width: 50px;
-    }
-
-    .logo_img{
-        margin-right: 13px;
-    }
+    
     .flex__inbox-colomn{
         flex-direction: column;
     }
-    .container-image_img{
-        max-width: 290px;
-        width: 100%;
-        margin-bottom: 32px;
+    .customers_logo-colmn{
+         width: 80px;
+         margin-left: 25px;
     }
     .inbox{
         padding: 50px 0 48px;
@@ -697,11 +803,14 @@ body{
     .inbox_response{
         padding: 30px 20px;
     }
+    .input_free_trial{
+        width: 260px;
+    }
 
     .grid_surface{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(7,1fr);
-        gap: 17px;
+        gap: 10px;
     }
     .item:nth-child(2){
         display: none;
@@ -732,6 +841,10 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,1fr);
         gap: 17px;
+    }
+    .card{
+        width: 290px;
+        height: 300px;
     }
     .card:nth-child(1){
         grid-row: 1/4;
