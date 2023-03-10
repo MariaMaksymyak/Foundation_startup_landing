@@ -695,7 +695,7 @@ max-width: 457px;
     font-weight: 400;
 }
 .footer_line {
-   width: 2000px;
+   width: 3000px;
 }
 .footer_item{
     font-size: 14px;
@@ -1093,7 +1093,12 @@ max-width: 457px;
     .footer{
         margin-top: 10px;
     }
-
+    .footer_border{
+        box-sizing: border-box;
+        border-bottom: solid 1px #E3E3E3;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 360px){
