@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
+   
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
 </head>
 
 <body>
@@ -33,10 +37,10 @@
                     <nav class="header_nav flex">
                         <ul class="header_ul flex">
                             <li class="header_li">
-                            <a class= "header_link" href="">Home</a>
+                            <a class= "header_link" id="about-link" href="">Home</a>
                             </li>
                             <li class="header_li">
-                            <a class= "header_link" href="">Stories</a>
+                            <a class= "header_link" id="stories-link" href="">Stories</a>
                             </li>
                         </ul>
                         <button class="button"> Get Started </button>
@@ -44,6 +48,8 @@
             </div>
         </div>
     </header>
+
+   
 
     <section class="main">
         <div class="container flex main_container">
@@ -75,6 +81,7 @@
     </div>
         </section>
 
+
     <section class="customers_logo">
        <div class="container flex customers_logo_grid">
         <img class="customers_logo-colmn" src="img/customers_logo/The_New_York_Times.png" alt="The New York Times">
@@ -86,63 +93,59 @@
        </div>
     </section>
 
-    <section class="features">
-        <div class="container flex features_container">
-            <div class="info ">
-                <p class="info_pretitle info_pretitle-green"> Features </p>
+   
+<section class="features">
+    <div class="container flex features_container">
+        <div> 
+            <div> 
+                 <p class="info_pretitle info_pretitle-green"> Features </p>
                 <h3 class="info_title"> Easily find leads and customers <h3>
-                <p class="info_text">
-                    Send one-off and automated email, push, 
-                    and in-app messages to people. Create better stories.
+                 <p class="info_text"> Send one-off and automated email, push, and in-app messages to people. Create better stories.
                 </p>
-                     <div class="flex features_container">
-                        <div>
-                        <img src="img/features_img/features.svg" alt="">
-                        </div>
-                            <div>    
-                                <div class="features_item"> 
-                    <div> 
-                    <img src="img/features_img/Icon-2.svg" alt="">
-                    <p class="features_title"> Acquire new customers </p>
-                    </div>
-                        <p class="features_text"> 
-                        Everything you need to start building – including <br> 
-                        open-source code, documentation.
-                        </p>
-                                </div>
-               
-                                <div class="features_item"> 
-                    <div> 
-                    <img src="img/features_img/Icon-3.svg" alt="">
-                    <p class="features_title"> Engage users</p>
-                    </div>
-                    <p class="features_text"> 
-                        Everything you need to start building – including <br> 
-                        open-source code, documentation.
-                    </p>
-                                </div>
-
-                                <div class="features_item"> 
-                    <div>
-                    <img src="img/features_img/Icon-4.svg" alt="">
-                    <p class="features_title"> Develop across platforms </p>
-                    </div>
-                    <p class="features_text"> 
-                        Everything you need to start building – including <br> 
-                        open-source code, documentation.
-                    </p>
-                                </div>
-                            </div>
-                    </div>
             </div>
-        <img src="img/features_img/Invision Screen.png" alt="">
+                <div class= "acquire flex ">
+                    <div class="acquire_container flex">
+                        <div> 
+                            <img  src="img/features_img/features.svg" alt="Features">
+                        </div>
+                        <div> 
+                   
+                            <div class="features_item"> 
+                        <div> 
+                            <img src="img/features_img/Icon-2.svg" alt="">
+                            <p class="features_title"> Acquire new customers </p>
+                         </div>
+                         <p class="features_text"> 
+                        Everything you need to start building – including <br> open-source code, documentation.
+                        </p>
+                            </div>
+                    
+                            <div class="features_item"> 
+                            <div> 
+                            <img src="img/features_img/Icon-3.svg" alt="">
+                            <p class="features_title"> Engage users</p>
+                            </div>
+                            <p class="features_text"> Everything you need to start building – including <br> open-source code, documentation.
+                            </p>
+                            </div>
+
+                            <div class="features_item"> 
+                            <div>
+                                <img src="img/features_img/Icon-4.svg" alt="">
+                                <p class="features_title"> Develop across platforms </p>
+                            </div>
+                        <p class="features_text"> Everything you need to start building – including <br> open-source code, documentation.
+                        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-    </section>
-
-
-
-
-
+            <div> 
+            <img src="img/features_img/Invision Screen.png" alt="">
+            </div>
+    </div>
+</section>
 
     <section class="inbox">
         <div class="container flex flex__inbox-colomn">
@@ -173,6 +176,7 @@
         </div>
     </section>
 
+   
     <section class="communication">
         <div class="container flex flex__cmmunication-colomn">
             <div class="info">
@@ -222,7 +226,7 @@
         <h4 class="audience_text"> Early stage company? Eligible applicants get <br> all of our products for just $49 a month. </h4>
         <div class="audience_buttons">
             <button class="button"> Get started </button>
-            <button id="open-modal" class="button_white"> Learn more </button>
+            <button id="open-modal" class="button_white"> Lern more </button>
         </div>
         <div class="audience_cards grid_cards">
             <div class="card"> 
@@ -242,7 +246,44 @@
     </div>
     </section>
 
-    <section class="about">
+    <section class= "trust">
+        <div> 
+            <p class="audience_subtitle audience_subtitle-blue"> Trusted by the world’s most innovative 
+            businesses – big and small </p>
+        </div>
+        <div class="flex trust_container">
+            <div class="trust_text"> 
+                <h4 class="audience_text"> 
+            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find
+             freelancers. Perfect for sales, marketing, and support” </h4>
+            </div>
+        <div> 
+            <img class="trust_img" src="/img/trust.png" alt="trust">
+        </div>
+    </section>
+    
+    <section>
+        <div class="carusel">
+            <div> 
+                <p class="features_title"> Viella Malkovich </p>
+                <p class="carusel_text">  Creative Director at Johnson</p>
+            </div>
+            <div> 
+                <p class="features_title"> Maria Filipvich </p>
+                <p class="carusel_text">  Prduct Director at Johnson</p>
+            </div>
+            <div> 
+                <p class="features_title"> Andriy Andersoovich </p>
+                <p class="carusel_text">  PR Director at Johnson</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about" class="about">
         <div class="container">
             <div class="about_info">
             <h2 class="audience_title"> We’re hiring </h2>
@@ -282,7 +323,7 @@
     </section>
 
 
-    <section class="surfaces container">
+    <section id="stories" class="surfaces container">
         <div class="surfaces_title"> 
             <h2> All Surfaces Covered </h2>
         </div>
@@ -437,11 +478,21 @@
     </div>
 </div>
 
+<div id="up">
+    <span> > </span>
+</div>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
 integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="script/script.js"> </script>
-<script src="script/modal.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="./script/script.js"> </script>
+<script src="./script/bxslider.js"></script>
+<script src="./script/modal.js"> </script>
+<script src="./script/upButton.js"> </script>
 </html>

@@ -247,9 +247,12 @@ body{
     margin-bottom: 40px;
 }
 
+
+
 .features{
     margin-bottom: 150px;
     margin-top: 100px;
+    position: relative;
 }
 .features_title{
     display: inline;
@@ -274,33 +277,35 @@ body{
     border: 0.5px solid gray;
     border-style: none none double none ;
 }
-
 .features_text{
-font-size: 18px;
-line-height: 26px;
-color: #2B292D;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-display: none;
-margin-top: 3px;
-max-width: 457px;
-
+    font-size: 18px;
+    line-height: 26px;
+    color: #2B292D;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: none;
+    margin-top: 3px;
+    max-width: 457px;
 }
-
-.features_container{
-    position: relative;
-}
-
 .features_container > div:first-child{
- z-index: 1;
- 
+    z-index: 1;
 }
 .features_container > div:last-child{
-  z-index: 0;
-  position: absolute;
-  right: 100px; 
-   
+     z-index: 0;
+     position: absolute;
+     right: 0px; 
+     top: 20px;
 }
- 
+
+.acquire{
+    position: relative;
+}
+.acquire_container > div:first-child{
+    z-index: 1;
+   }
+   .acquire_container > div:last-child{
+    z-index: 0;
+    right: 40px;
+   }
 
 .inbox{
     background:rgba(252, 240, 227, .4);
@@ -552,7 +557,24 @@ max-width: 457px;
     padding: 30px 0 60px;
 }
 
-
+.audience_subtitle-blue{
+    color: #3142C6;
+}
+.carusel_text{
+    line-height: 24px;
+    color: rgba(43, 41, 45, 0.6);
+}
+.trust_container{
+    position: relative;
+}
+.trust_container > div:first-of-type{
+    z-index: 1;
+}
+.trust_container > last:first-of-type{
+    z-index: 0;
+    position: absolute;
+    right: 0px;
+}
 
 
 .card {
@@ -675,6 +697,32 @@ max-width: 457px;
     transition: 1s;
 }
 
+
+.trust{
+    position: relative;
+    margin-top: 50px;
+}
+.trust_text{
+   max-width: 750px;
+   justify-content: center;
+   margin-left: 460px;
+}
+.trust_container > div:first-of-type {
+    z-index: 0;
+}
+.trust_container > div:last-of-type {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    }
+
+
+
+
+.carusel{
+    position: fixed;
+}
 .footer{
     margin-top: 60px;
     margin-bottom: 100px;
@@ -741,6 +789,29 @@ max-width: 457px;
     top: 20px;
     right: 40px;
     cursor: pointer;
+}
+
+#up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: bold;
+    bottom: 100px;
+    right: 50px;
+    background-color: #aeb1d9;
+    border-radius: 50%;
+    color: white;
+    cursor:pointer;
+}
+#up span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    transform: rotate(-90deg) translate(100%, -35%);;
+   
 }
 
 @media screen and (max-width: 1200px) {
