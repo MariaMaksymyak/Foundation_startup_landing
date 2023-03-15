@@ -43,7 +43,7 @@
                             <a class= "header_link" id="stories-link" href="">Stories</a>
                             </li>
                         </ul>
-                        <button class="button"> Get Started </button>
+                        <button id="open-modal_start" class="button"> Get Started </button>
                     </nav>
             </div>
         </div>
@@ -58,7 +58,7 @@
                 <p class="main_text">Create live segments and target the right people for messages 
                 based on their behaviors.</p>
                 <div> 
-                <button class="button"> Get Started</button>
+                <button id="open-modal_start2" class="button"> Get Started</button>
                 <button id="open-modal" class="button_white"> Lern more </button>
                 </div>
             </div>
@@ -96,19 +96,19 @@
    
 <section class="features">
     <div class="container flex features_container">
-        <div> 
+        <div>
             <div> 
                  <p class="info_pretitle info_pretitle-green"> Features </p>
-                <h3 class="info_title"> Easily find leads and customers <h3>
-                 <p class="info_text"> Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                <h3 class="info_title info_title_features"> Easily find leads and customers <h3>
+                 <p class="info_text info_text_features"> Send one-off and automated email, push, and in-app messages to people. Create better stories.
                 </p>
             </div>
                 <div class= "acquire flex ">
                     <div class="acquire_container flex">
-                        <div> 
-                            <img  src="img/features_img/features.svg" alt="Features">
+                        <div class="features_image"> 
+                            <img src="img/features_img/features.svg" alt="Features">
                         </div>
-                        <div> 
+                        <div class="features_items"> 
                    
                             <div class="features_item"> 
                         <div> 
@@ -142,7 +142,7 @@
                 </div>
         </div>
             <div> 
-            <img src="img/features_img/Invision Screen.png" alt="">
+            <img class= "features_img" src="img/features_img/Invision Screen.png" alt="">
             </div>
     </div>
 </section>
@@ -186,7 +186,7 @@
                         One place to manage and respond to all conversations with leads and users. 
                         Receive messages from leads.
                     </p>
-                    <button class="button">Get Start </button>
+                    <button id= "open-modal_start3" class="button">Get Start </button>
             </div>
             <div class="container-image">
             <img class="container-image_img" src="./img/communicate.png" alt="Communicate image">
@@ -225,21 +225,21 @@
         <h2 class="audience_title"> Understand your <br> audience </h2>
         <h4 class="audience_text"> Early stage company? Eligible applicants get <br> all of our products for just $49 a month. </h4>
         <div class="audience_buttons">
-            <button class="button"> Get started </button>
-            <button id="open-modal" class="button_white"> Lern more </button>
+            <button id= "open-modal_start4" class="button"> Get started </button>
+            <button id="open-modal1" class="button_white"> Lern more </button>
         </div>
         <div class="audience_cards grid_cards">
             <div class="card"> 
-                <img src="img/audience_photo/develpers.png" alt="Develpers" > 
+                <img class= "card_img" src="img/audience_photo/develpers.png" alt="Develpers" > 
                 <p class="audience_cards_text"> Develpers </p>
             </div>
-            <div class="card"> <img src="img/audience_photo/entertainment.png" alt="Entertainment" > 
+            <div class="card"> <img class= "card_img"src="img/audience_photo/entertainment.png" alt="Entertainment" > 
                 <p class="audience_cards_text">Entertainment </p>
             </div>
-            <div class="card"> <img src="img/audience_photo/athletes.png" alt="Athletes" > 
+            <div class="card"> <img class= "card_img"src="img/audience_photo/athletes.png" alt="Athletes" > 
             <p class="audience_cards_text"> Athletes </p>
         </div>
-            <div class="card"> <img src="img/audience_photo/creators.png" alt="Creators" > 
+            <div class="card"> <img class= "card_img" src="img/audience_photo/creators.png" alt="Creators" > 
             <p class="audience_cards_text"> Creators</p>
         </div>
         </div>
@@ -253,11 +253,12 @@
         </div>
         <div class="flex trust_container">
             <div class="trust_text"> 
-                <h4 class="audience_text"> 
-            “Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find
+                <h4 class="audience_text trust_text"> 
+            “Comprehensive set of startup tools for all imaginable <br> 
+            entrepreneurial needs. Create landing pages, send emails, find <br> 
              freelancers. Perfect for sales, marketing, and support” </h4>
             </div>
-        <div> 
+        <div class="trust-colomn"> 
             <img class="trust_img" src="/img/trust.png" alt="trust">
         </div>
     </section>
@@ -289,9 +290,9 @@
             <h2 class="audience_title"> We’re hiring </h2>
             <h4 class="audience_text"> We’re a team of lifelong learners. We’re equal <br> 
                 parts left and right brained.</h4>
-            <button class="button_about"> More about Company </button>
+            <button id="open-modal2" class="button_about"> More about Company </button>
         </div>
-            <div>
+            <div class="about_items">
                 <div class="about-items">
                     <div class="flex"> 
                         <p class="about-pretitle"> Front-End Developer </p>
@@ -323,7 +324,7 @@
     </section>
 
 
-    <section id="stories" class="surfaces container">
+    <section id="stories" class="surfaces container surfaces_container">
         <div class="surfaces_title"> 
             <h2> All Surfaces Covered </h2>
         </div>
@@ -363,7 +364,7 @@
                     <input class="input_free_trial" id="email" placeholder ="Enter your email" type="email">
                     <button class="button button_trial"> Get Started </button>
                 </form>
-                
+                <div class="free_trial_checkbox"> 
                 <label class="trial_checkbox">
                     <input class="checkbox" type="checkbox">
                     <span class="fake"></span>
@@ -382,6 +383,7 @@
                     <span class="text">Cancel any time</span>
                     <p class="trial_checkbox"> Check out <a class= "trial_link" href=""> Terms of Use.</a> </p>
                 </label>
+            </div>
             </div>
     </section>
 
@@ -449,6 +451,33 @@
     </div>
    
 </footer>  
+
+<div class="modal-overlay_get_start">
+    <div class="modal_start">
+        <div class="logo">
+            <img  src="img/header/logo.svg" alt="logo">
+            <div>
+                <h6 class="logo_title"> Foundation </h6>
+                <p class="logo_text"> Startup landing template </p>
+                <p class="info_text"> Build stunning websites & apps. </p>
+            </div>
+        </div>
+        <form class="form_trial" method="POST">
+            <div>
+                <input class="input_free_trial" placeholder="Your name" type="text" id="name">
+                <p id="error-name" class="error-message"> </p>
+            </div> 
+            <div>
+                <input class="input_free_trial" id="email" placeholder ="Enter your email" type="email">
+                <p id="error-email" class="error-message"></p>
+            </div>
+                <button class="button button_trial"> SEND </button>
+        </form>
+        <p class="close"> x </p>
+    </div>
+</div>
+
+
 
 
 
