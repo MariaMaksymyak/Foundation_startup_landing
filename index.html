@@ -4,571 +4,417 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-
+    <title> Foundation Startup Landing </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-
-
-
-    <!-- підключення шрифтів -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- ресет CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!-- CSS --> 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/carusel.css">
     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/carusel.css">
 </head>
 
 <body>
-
     <header>
-        <section class="header">
-            <div class="container">
-                <div class="logo flex_logo">
-                    <img  class = "logo_img" src="./images/header/logo.png" alt="logo">
-                     <h6 class="logo_title"> Landguru </h6>
-
-                     <nav class="menu flex">
-                        <ul class="menu_list">
-                            <li class="menu-list">
-                                <a href="" class="menu_link"> Home </a>
+    <section class="header">
+        <div class="container flex">
+            <div class="logo flex">
+                <img  src="./img/header/logo.svg" alt="logo">
+                <div>
+                    <h6 class="logo_title"> Foundation </h6>
+                    <p class="logo_text"> Startup landing template </p>
+                </div>
+            </div>
+            <div class="menu"> 
+                <input type="checkbox" class="checkbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
+                </div>
+                    <nav class="header_nav flex">
+                        <ul class="header_ul flex">
+                            <li class="header_li">
+                            <a class= "header_link" id="about-link" href="">Home</a>
                             </li>
-                            <li class= "menu-list">
-                                <a href="" class="menu_link"> Adversite </a>
-                                <span class="arrow">  </span>
-                                
-                                     <ul class="sub_menu_list"> 
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> Quality features </a>
-                                        </li>
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> Core features </a>
-                                        </li>
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> The functions </a>
-                                        </li>
-                                        <li class="sub_menu-list"> 
-                                            <a href="" class="sub_menu_link"> Testimunial </a>
-                                        </li>
-                                    </ul>
-                            </li>
-                            <li class= "menu-list">
-                                <a href="" class="menu_link"> Supports  </a>
-                                <span class="arrow menu_arrow">  </span>
-                                
-                                     <ul class="sub_menu_list"> 
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> Frequent question </a>
-                                        </li>
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> Plans </a>
-                                        </li>
-                                        <li class="sub_menu-list"> 
-                                        <a href="" class="sub_menu_link"> The functions </a>
-                                        </li>
-                                    </ul>
-                            </li>
-                            <li class= "menu-list">
-                                <a href="" class="menu_link"> Contacts </a>
+                            <li class="header_li">
+                            <a class= "header_link" id="stories-link" href="">Stories</a>
                             </li>
                         </ul>
-                            <button class="button_menu"> Get Started </button>
+                        <button id="open-modal_start" class="button"> Get Started </button>
                     </nav>
-                </div>
-
-
-                <div class="flex">
-                    <div> 
-                        <h1 class="header_title"> Experience your ultimate  mobile application </h1>
-                        <p class="header_text"> Get your blood tests delivered at let home collect sample from the victory of the managments that supplies best
-                    design system guidelines ever.</p>
-                        <button class="button_header"> Get Started </button>
-
-                           <img src="./images/header/play_icon.png" alt="play icon"> 
-                           <a  href="" class="watch_video"> Watch Video </a>
-                    
-                        <div class=" flex sponsors">
-                            <h6 class = "sponsored_text"> Sponsored by:</h6>
-                            
-                    <img class="sponsor_img" src="./images/header/paypal.png" alt="logo">
-                    <img class="sponsor_img" src="./images/header/google.png" alt="logo">
-                    <img class="sponsor_img" src="./images/header/dropbox.png" alt="logo">
-                        
-                    </div>
-                    </div>
-                    <div> 
-                    <img  class= "header_img" src="./images/header/mockup.png" alt="mobile phone">
-                    </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
     </header>
 
-        <section class="quality_features container">
-            <h6 class="info_pretitle"> Quality features</h6>
-            <h3 class="quality_features_title"> Meet exciting feature of app</h3>
-            <div class="quality_cards flex">
-                <div class="quality_card"> 
-                    <img src="./images/quality_features/icon.png" alt="play icon"> 
-                    <h5 class="card_title"> Vector Editing</h5>
-                    <p class="card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
-                </div>
-                <div class="quality_card"> 
-                    <img src="./images/quality_features/icon-2.png" alt="play icon"> 
-                    <h5 class="card_title"> Vector Editing</h5>
-                    <p class="card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
-                </div>
-                <div class="quality_card"> 
-                    <img src="./images/quality_features/icon-3.png" alt="play icon"> 
-                    <h5 class="card_title"> Vector Editing</h5>
-                    <p class="card_text"> Get your blood tests delivered at home collect a sample from theyour blood tests.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="core_features container">
-            <div class="flex"> 
-                <img class = "core_img" src="./images/core_features/analitic_platform.png" alt="play icon"> 
-                    <div class="core_features_info"> 
-                        <div class="core_features_text">
-                    <h6 class="info_pretitle core_pretitle"> Core features </h6>
-                    <h2 class="section_title"> Smart Jackpots  that you may love this anytime & anywhere</h2>
-                    </div>
-                    
-                    <div class="core_features_card">
-                        <div class=" flex "> 
-                            <img class= "features_icon" src="./images/core_features/icon1.png" alt="features core icon">
-                                <div> 
-                                <h5 class="core_card_title"> Smart Features </h5>
-                                <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.
-                                your blood tests.</p>
-                                </div>
-                        </div>
-
-                        <div class=" flex "> 
-                            <img class= "features_icon" src="./images/core_features/icon2.png" alt="features core icon">
-                                <div> 
-                                <h5 class="core_card_title"> Secure Contents </h5>
-                                <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.
-                                your blood tests.</p>
-                                </div>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-        </section>
-
-        <section class="exciting_features container">
-            <h6 class="info_pretitle"> Quality features</h6>
-            <h3 class="quality_features_title"> Meet exciting feature of app</h3>
-            <div class="container flex features_cards_grid">
-                
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-1.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Smart Features </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-2.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Fast Performance </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-4.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Unlimited Content </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-5.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Ultimate Customization </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-6.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Boost Productivity </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-                <div class=" flex "> 
-                    <img class= "features_icon" src="./images/exciting_features/icon-3.png" alt="features core icon">
-                        <div> 
-                        <h5 class="core_card_title"> Customer Support </h5>
-                        <p class="core_card_text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                        </div>
-                </div>
-
-</div>
-        </section>
-
-
-<section class="smart_features container">
-    <div class=" flex"> 
-    
-    <div class="core_features_text">
-        <h6 class="info_pretitle core_pretitle"> Core features </h6>
-        <h2 class="smart_features_title"> Smart Jackpots  that you may love this anytime & anywhere</h2>
-        <p class="smart_features_text"> Get your tests delivered at let home collect sample from the victory of the managments that 
-            supplies best design system guidelines ever. Get your tests delivered at let home collect sample.</p>
-        <button class="smart_features_button"> Get Started </button>
-    </div>
-        <img class= "smart_features_img" src="./images/smart_features/smart.png" alt="smart features">
-     </div>
    
-</section>
 
-<section class="how_it_works "> 
-    <div class="container">
-        <h6 class="how_it_works_pretitle">Whats the function </h6>
-            <h3 class="how_it_works_title"> Let’s see how it works</h3>
-    
-            <div class=" how_it_works_cards_grid">
-                
-                <div class="how_it_works_card"> 
-                    <div class="flex"> 
-                        <img class= "" src="./images/how_it_works/item1.png" alt="icon">
-                        <img class= "" src="./images/how_it_works/arrow.png" alt="">
-                    </div>
-                    <div> 
-                        <h5 class="how_it_works_cards__title"> Set disbursement Instructions </h5>
-                        <p class="how_it_works_cards__text"> Get your blood tests delivered athome collect a sample from the your blood tests.
-                        </p>
-                    </div>
-                </div>
-            
-                <div class="how_it_works_card"> 
-                    <div class="flex"> 
-                        <img class= "" src="./images/how_it_works/item2.png" alt="icon">
-                        <img class= "" src="./images/how_it_works/arrow2.png" alt="">
-                    </div>
-                    <div> 
-                        <h5 class="how_it_works_cards__title"> Assembly retrieves funds from your account </h5>
-                        <p class="how_it_works_cards__text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                    </div>
-                </div>
-
-                <div class="how_it_works_card"> 
-                    <div class="flex"> 
-                        <img class= "" src="./images/how_it_works/item3.png" alt="icon">
-                        <img class= "" src="./images/how_it_works/arrow.png" alt="">
-                    </div>
-                    <div> 
-                        <h5 class="how_it_works_cards__title"> Assembly initiates disbursement </h5>
-                        <p class="how_it_works_cards__text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                    </div>
-                </div>
-
-                <div class="how_it_works_card"> 
-                <img class= "" src="./images/how_it_works/item4.png" alt="icon">
-                    <div> 
-                        <h5 class="how_it_works_cards__title"> Customer receives funds payment </h5>
-                        <p class="how_it_works_cards__text"> Get your blood tests delivered at let home collect sample from the victory of the managments.</p>
-                    </div>
+    <section class="main">
+        <div class="container flex main_container">
+            <div>
+                <h1 class="main_title"> Build stunning websites & apps. </h1>
+                <p class="main_text">Create live segments and target the right people for messages 
+                based on their behaviors.</p>
+                <div> 
+                <button id="open-modal_start2" class="button"> Get Started</button>
+                <button id="open-modal" class="button_white"> Lern more </button>
                 </div>
             </div>
-         </div>
-</section>
-
-
-<section class="clients">
-    <div class="container"> 
-        <h6 class="info_pretitle clients_pretitle"> Testimunial </h6>
-        <h3 class="quality_features_title"> Meet Client Satisfaction</h3>
-
-    
-        <div class="clients_cards flex">
-            
-            <div class="client_card"> 
-                <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-                <p class="client_card_title"> Modern look & trending design</p>
-                <p class="client_card_response"> Get working experience to work with this amazing team & 
-                    in future want to work together for bright future projects and also make deposit 
-                    to freelancer.</p>
-                    <div class=" flex "> 
-                        <img class="clients_photo" src="./images/clients/client_img.png" alt= >
-                            <div> 
-                                <p class="clients_name"> Denny Hilguston</p>
-                                <p class="clients_nickname"> @denny.hil </p>
-                            </div>  
-                    </div>
-            </div>
-                
-
-            <div class="client_card"> 
-                <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-                <p class="client_card_title"> Design Quality & performance</p>
-                <p class="client_card_response"> Get working experience to work with this amazing team & 
-                    in future want to work together for bright future projects and also make deposit 
-                    to freelancer.</p>
-                    <div class=" flex "> 
-                        <img class="clients_photo" src="./images/clients/client2_img.png" alt= >
-                            <div> 
-                                <p class="clients_name"> Denny Hilguston</p>
-                                <p class="clients_nickname"> @denny.hil </p>
-                            </div>  
-                    </div>
-            </div>
-
-
-
-        
-
-
-            <div class="client_card"> 
-                <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-                <p class="client_card_title"> Layout and organized layers </p>
-                <p class="client_card_response"> Get working experience to work with this amazing team & 
-                    in future want to work together for bright future projects and also make deposit 
-                    to freelancer.</p>
-                    <div class=" flex "> 
-                        <img class="clients_photo" src="./images/clients/client3_img.png" alt= >
-                            <div> 
-                                <p class="clients_name"> Denny Hilguston</p>
-                                <p class="clients_nickname"> @denny.hil </p>
-                            </div>  
-                    </div>
-            </div>
-                    
-                
-                 
-        
-        
-        </div>
-    
-</div>
-
-
- </section>
-
- <section> 
- <div class="slideshow-container container">
-    <div class="mySlides fade  slides_cards">
-        <div class="client_card"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Modern look & trending design</p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="client_card slides_cards"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Design Quality & performance</p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client2_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
-    </div>
-
-
-    <div class="mySlides fade">
-        <div class="client_card slides_cards"> 
-            <img class = "client_card_img" src="./images/clients/clients_icon.png" alt="stars">
-            <p class="client_card_title"> Layout and organized layers </p>
-            <p class="client_card_response"> Get working experience to work with this amazing team & 
-                in future want to work together for bright future projects and also make deposit 
-                to freelancer.</p>
-                <div class=" flex "> 
-                    <img class="clients_photo" src="./images/clients/client3_img.png" alt= >
-                        <div> 
-                            <p class="clients_name"> Denny Hilguston</p>
-                            <p class="clients_nickname"> @denny.hil </p>
-                        </div>  
-                </div>
-        </div>
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)"> &#10094 </a>
-    <a class="next" onclick="plusSlides(1)"> &#10095 </a>
-</div>
-
-<br>
-
-<div style="text-align: center;"> 
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
-
-</section>
-
- 
-
- 
-
-
-
-<section class="secure_paymant">
-    <div class="container">
-        <div class="flex paymant"> 
-            <img class = "core_img" src="./images/secure_paymant/paymant.png" alt="play icon"> 
-                <div class="core_features_info"> 
-                    <div class="core_features_text">
-                <h6 class="info_pretitle core_pretitle"> Core features </h6>
-                <h2 class="section_title"> Secure Payment Transaction System with #1 Ranking</h2>
-                <p class="smart_features_text"> Get your tests delivered at let home collect sample from the victory of the managments that 
-                    supplies best design system guidelines ever. Get your tests delivered at let home collect sample.</p>
-                <button class="smart_features_button"> Lern More </button>
-                </div>
-    </div>
-</section>
-
-
-<section class="plans">
-<div class="container">
-    <h6 class="how_it_works_pretitle">Whats the function </h6>
-        <h3 class="how_it_works_title"> Let’s see how it works</h3>
-
-        <div class="plans_cards_grid">
-            
-            <div class="free_plan_card"> 
-                <h5 class="plans_cards_title"> Free Plan </h5>
-                <p class="plans_cards_subtitle"> For Small teams or office </p>
-                    <ul class="plane_items">
-                        <li>Ultimate access to all course, exercises and assessments</li>
-                        <li>Free acess for all kind of exercise corrections with downloads.</li>
-                        <li>Total assessment corrections with free download access system</li>
-                    </ul>
-                    <ul class="plane_items2">
-                        <li>Unlimited download of courses on the mobile app contents</li>
-                        <li>Download and print courses and exercises in PDF</li>
-                    </ul>
-                    <button class="signup_button"> Sign-up Now </button>
-            </div>
-
-            <div class="premium_plan_card">
-                <div class="flex"> 
-                    <div> 
-                        <button class="premium_plan_button"> Recommended </button>
-                        <h5 class="plans_cards_title premium_title"> Premium </h5>
-                        <p class="plans_cards_subtitle premium"> For startup enterprise </p>
-                    </div>
-                    <div> 
-                    <p class= "plans_cards_subtitle premium_start"> Starting from </p>
-                    <p class="premium_price"> 49.99/mo </p>
-                    </div>
-                </div>
-
-                    <ul class="plane_items premium">
-                        <li>Ultimate access to all course, exercises and assessments</li>
-                        <li>Free acess for all kind of exercise corrections with downloads.</li>
-                        <li>Total assessment corrections with free download access system</li>
-                        <li>Unlimited download of courses on the mobile app contents</li>
-                        <li>Download and print courses and exercises in PDF</li>
-                    </ul>
-                    <button class="signup_button signup_button_premium"> Sign-up Now </button>
+            <div>
+                <img class="main_img" src="./img/main.png" alt="main image">
             </div> 
-    </div>
-</section>
-
-<section class="question_faq">
-    <div class="container">
-        <div class="question_text"> 
-        <h6 class="info_pretitle"> Frequent Question</h6>
-            <h3 class="quality_features_title "> Do you have any question?</h3>
         </div>
-            <div class="questions">
-                <div class="question">
-                    <div class="flex_question"> 
-                    <img class ="question-icon" src="./images/question/question_icon.png"> 
-                    <img class ="question-rotate-icon" src="./images/question/answer_icon.png"> 
-                    <p class="question_title"> How to contact with riders emergency ? </p>
-                </div>
-                    <p class="answer"> 
-                Get your blood tests delivered at the home collect a sample from management news. 
-                Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
-                Get your blood tests delivered at the home. </p>     
-                </div>
+    </section>
 
-                <div class="questions">
-                    <div class="question">
-                        <div class="flex_question"> 
-                        <img class ="question-icon" src="./images/question/question_icon.png"> 
-                        <p class="question_title"> App installation failed, how to update system information? </p>
-                    </div>
-                        <p class="answer"> 
-                    Get your blood tests delivered at the home collect a sample from management news. 
-                    Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
-                    Get your blood tests delivered at the home. </p>     
-                    </div>
-
-
-                    <div class="questions">
-                        <div class="question">
-                            <div class="flex_question"> 
-                            <img class ="question-icon" src="./images/question/question_icon.png"> 
-                            <p class="question_title"> Website reponse taking time, how to improve? </p>
-                        </div>
-                            <p class="answer"> 
-                        Get your blood tests delivered at the home collect a sample from management news. 
-                        Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
-                        Get your blood tests delivered at the home. </p>     
-                        </div>
-
-
-                        <div class="questions">
-                            <div class="question">
-                                <div class="flex_question"> 
-                                <img class ="question-icon" src="./images/question/question_icon.png"> 
-                                <p class="question_title"> New update fixed all bug and issues </p>
-                            </div>
-                                <p class="answer"> 
-                            Get your blood tests delivered at the home collect a sample from management news. 
-                            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. 
-                            Get your blood tests delivered at the home. </p>     
-                            </div>
-                </div>
-
+    <section class="information">
+        <div class="container flex flex__inbox-colomn"> 
+        <div class="question_first">
+        <h4 class="information_title"> What is it about? </h4>
+            <p class="information_text"> Building a website for a startup that looks amazing is not a rocket science anymore. </p>
+        </div>
+        <div class="question_second">
+            <h4 class="information_title"> Who is it for?</h4>
+            <p class="information_text">Startups, small companies and teams, entrepreneurs and web developers. </p>
+        </div>
     </div>
+        </section>
 
 
+    <section class="customers_logo">
+       <div class="container flex customers_logo_grid">
+        <img class="customers_logo-colmn" src="./img/customers_logo/The_New_York_Times.png" alt="The New York Times">
+        <img class="customers_logo-colmn" src="./img/customers_logo/Forbs.png" alt="Forbs">
+        <img class="customers_logo-colmn" src="./img/customers_logo/Apple.png" alt="Apple">
+        <img class="customers_logo-colmn" src="./img/customers_logo/Google.png" alt="Google">
+        <img class="customers_logo-colmn" src="./img/customers_logo/Mashable.png" alt="Mashable">
+        <img class="customers_logo-colmn" src="./img/customers_logo/WSJ.png" alt="Wsj">
+       </div>
+    </section>
+
+   
+<section class="features">
+    <div class="container flex features_container">
+        <div>
+            <div> 
+                 <h6 class="info_pretitle info_pretitle-green"> Features </h6>
+                <h3 class="info_title info_title_features"> Easily find leads and customers </h3>
+                 <p class="info_text info_text_features"> Send one-off and automated email, push, and in-app messages to people. Create better stories.
+                </p>
+            </div>
+                <div class= "acquire flex ">
+                    <div class="acquire_container flex">
+                        <div class="features_image"> 
+                            <img src="./img/features_img/features.svg" alt="Features">
+                        </div>
+                        <div class="features_items"> 
+                   
+                            <div class="features_item"> 
+                        <div> 
+                            <img src="./img/features_img/Icon-2.svg" alt="">
+                            <p class="features_title"> Acquire new customers </p>
+                         </div>
+                         <p class="features_text"> 
+                        Everything you need to start building – including <br> open-source code, documentation.
+                        </p>
+                            </div>
+                    
+                            <div class="features_item"> 
+                            <div> 
+                            <img src="img/features_img/Icon-3.svg" alt="">
+                            <p class="features_title"> Engage users</p>
+                            </div>
+                            <p class="features_text"> Everything you need to start building – including <br> open-source code, documentation.
+                            </p>
+                            </div>
+
+                            <div class="features_item"> 
+                            <div>
+                                <img src="./img/features_img/Icon-4.svg" alt="">
+                                <p class="features_title"> Develop across platforms </p>
+                            </div>
+                        <p class="features_text"> Everything you need to start building – including <br> open-source code, documentation.
+                        </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div> 
+            <img class= "features_img" src="./img/features_img/InvisionScreen.png" alt="Features">
+            </div>
+    </div>
 </section>
 
-<footer>
-    <div class="footer_line"> </div>
-    <div class="container flex"> 
+    <section class="inbox">
+        <div class="container flex flex__inbox-colomn">
+            <div class="container-image">
+                <img class="container-image_img" src="./img/inbox_img.svg" alt="Inbox image">
+            </div>
+            <div class="info">
+                <h6 class="info_pretitle info_pretitle-orange"> Team inbox </h6>
+                <h3 class="info_title"> Manage conversations </h3>
+                <p class="info_text">
+                    One place to manage and respond to all conversations with leads and users. 
+                    Receive messages from leads.
+                </p>
+                    <div class="inbox_response">
+                        <p class="inbox_text">
+                        “Great widgets. Great selection. Great design and easy to implement. 
+                        Definitely a huge time saver for a web developer!”
+                        </p>
+                        <div class="flex flex_start">
+                        <img class= "inbox_img" src="./img/response_img.svg" alt="person">
+                            <div>
+                        <p class="inbox_name"> Viella Malkovich</p>
+                        <p class="inbox_position"> Creative Director at Johnson </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="communication">
+        <div class="container flex flex__cmmunication-colomn">
+            <div class="info">
+                <h6 class="info_pretitle info_pretitle-blue"> Communicate Better </h6>
+                <h3 class="info_title"> Built for busy small teams </h3>
+                    <p class="info_text">
+                        One place to manage and respond to all conversations with leads and users. 
+                        Receive messages from leads.
+                    </p>
+                    <button id= "open-modal_start3" class="button">Get Start </button>
+        </div>
+            <div class="container-image">
+            <img class="container-image_img" src="./img/communicate.png" alt="Communicate image">
+            </div>
+        </div>
         
+        <div class="excert container flex excert_noflex"> 
+            <div class="excert_text excert_text_subscriptions">
+                <p class="inbox_text">
+                <span class="inbox_text-bold"> Subscriptions.</span> 
+                Foundation works with the tools and services you already use every day.
+                </p>
+                <a class= "link-excert" href=""> Learn more about subscriptions </a>
+            </div>
+            <div class="excert_text excert_text_hours">
+                <p class="inbox_text">
+                    <span class="inbox_text-bold"> Felxible Hours. </span>
+                    Get started with our simple snippet of JavaScript or easy to install SDKs for iOS and Android.
+                </p>
+                    <a class= "link-excert" href=""> Get more info about hours </a>    
+            </div>
+            <div class="excert_text excert_text_communication">
+                <p class="inbox_text">
+                    <span class="inbox_text-bold"> Fast Communication.</span> 
+                    We offer measures like 2FA and SSO to ensure the safety of your data.
+                </p>
+                    <a class= "link-excert" href=""> Communication guidelines </a>
+            </div>     
+        </div>
+    </section>
+
+    <section class="audience">
+        <div class="container">
+        <p class="audience_subtitle"> Engage Visitors </p>
+        <h2 class="audience_title"> Understand your <br> audience </h2>
+        <h4 class="audience_text"> Early stage company? Eligible applicants get <br> all of our products for just $49 a month. </h4>
+        <div class="audience_buttons">
+            <button id= "open-modal_start4" class="button"> Get started </button>
+            <button id="open-modal1" class="button_white"> Lern more </button>
+        </div>
+        <div class="audience_cards grid_cards">
+            <div class="card"> 
+                <img class= "card_img" src="./img/audience_photo/develpers.png" alt="Develpers" > 
+                <p class="audience_cards_text"> Develpers </p>
+            </div>
+            <div class="card"> <img class= "card_img" src="./img/audience_photo/entertainment.png" alt="Entertainment" > 
+                <p class="audience_cards_text">Entertainment </p>
+            </div>
+            <div class="card"> <img class= "card_img" src="./img/audience_photo/athletes.png" alt="Athletes" > 
+            <p class="audience_cards_text"> Athletes </p>
+        </div>
+            <div class="card"> <img class= "card_img" src="./img/audience_photo/creators.png" alt="Creators" > 
+            <p class="audience_cards_text"> Creators</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class= "trust">
+        <div> 
+            <p class="audience_subtitle audience_subtitle-blue"> Trusted by the world’s most innovative 
+            businesses – big and small </p>
+        </div>
+        <div class="flex trust_container">
+            <div class="trust_text"> 
+                <h4 class="audience_text trust_text"> 
+            “Comprehensive set of startup tools for all imaginable <br> 
+            entrepreneurial needs. Create landing pages, send emails, find <br> 
+             freelancers. Perfect for sales, marketing, and support” </h4>
+            </div>
+                 <div class="trust-colomn"> 
+                    <img class="trust_img" src="./img/trust.png" alt="trust">
+                </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="carusel">
+            <div> 
+                <p class="features_title"> Viella Malkovich </p>
+                <p class="carusel_text">  Creative Director at Johnson</p>
+            </div>
+            <div> 
+                <p class="features_title"> Maria Filipvich </p>
+                <p class="carusel_text">  Prduct Director at Johnson</p>
+            </div>
+            <div> 
+                <p class="features_title"> Andriy Andersoovich </p>
+                <p class="carusel_text">  PR Director at Johnson</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about_info">
+            <h2 class="audience_title"> We’re hiring </h2>
+            <h4 class="audience_text"> We’re a team of lifelong learners. We’re equal <br> 
+                parts left and right brained.</h4>
+            <button id="open-modal2" class="button_about"> More about Company </button>
+        </div>
+            <div class="about_items">
+                <div class="about-items">
+                    <div class="flex"> 
+                        <p class="about-pretitle"> Front-End Developer </p>
+                        <p class="about-item "> Los Angeles / Remote </p>
+                    <p class="about-icon"> > </p>
+                    </div>
+                    <p class="about-text"> Everything you need to start building – including open-source code, documentation.</p>
+                   
+                </div>
+
+                    <div class="about-items">
+                        <div class="flex">  
+                            <p class="about-pretitle"> Community Manager </p>
+                            <p class="about-item"> New York / Full-Time </p>
+                            <p class="about-icon"> > </p>
+                        </div>
+                        <p class="about-text"> Everything you need to start building – including open-source code, documentation.</p>
+                        </div>
+
+                        <div class="about-items">
+                            <div class="flex">  
+                                <p class="about-pretitle"> UX/UI Designer </p>
+                                <p class="about-item"> New York / Full-Time </p>
+                                <p class="about-icon" > > </p>
+                            </div>
+                            <p class="about-text"> Everything you need to start building – including open-source code, documentation.</p>
+                            </div> 
+        </div>
+        </div>
+    </section>
+
+
+    <section id="stories" class="surfaces container surfaces_container">
+        <div class="surfaces_title"> 
+            <h2> All Surfaces Covered </h2>
+        </div>
+        <div class="surfaces_text"> 
+            <p> 
+                IOON kills bacteria on your hands, <br>
+                food, tables, laptops, you name it
+            </p>
+        </div>
+        
+        <div class="surfaces_photo container"> 
+            <div class="grid_surface">
+                <div class="item" > <img src="./img/surfaces_photo/surfaces_apple.png" alt="Apple" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_bus.png" alt="Bus" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_man.png" alt="Man" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_arm.png" alt="Arm" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_phone.png" alt="Phone" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_baby.png" alt="Baby" > </div>
+                <div class="item"> <img src="./img/surfaces_photo/surfaces_dog.png" alt="Dog" > </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="free_trial">
+        <div class="container flex flex__inbox-colomn">
+            <div class="container-image">
+                <img class="container-image_img" src="./img/free_trial.png" alt="Free trial image">
+            </div>
+            <div class="info_trial">
+                <h3 class="info_title trial_info_title"> Start your free trial. </h3>
+                <p class="info_text trial_info_text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+            
+                <form class="form_trial"> 
+                    <input class="input_free_trial" id="email" placeholder ="Enter your email" type="email">
+                    <button class="button button_trial"> Get Started </button>
+                </form>
+                <div class="free_trial_checkbox"> 
+                <label class="trial_checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="fake"></span>
+                    <span class="text">Free 14-day trial</span>
+                </label>
+
+                <label class="trial_checkbox">
+                    <input class="checkbox" type="checkbox">
+                    <span class="fake"></span>
+                     <span class="text">Easy setup</span>
+                </label>
+
+                <label class="trial_checkbox">
+                     <input class="checkbox" type="checkbox">
+                     <span class="fake"></span>
+                    <span class="text">Cancel any time</span>
+                    <p class="trial_checkbox"> Check out <a class= "trial_link" href=""> Terms of Use.</a> </p>
+                </label>
+            </div>
+            </div>
+            </div>
+    </section>
+
+<footer>     
+    <div class="container flex footer flex__footer-colomn"> 
+        <div class="footer_border">
+            <div class="logo flex footer_logo_noflex">
+                <img class="footer_logo" src="./img/header/logo.svg" alt="logo">
+                <div>
+                    <h6 class="logo_title"> Foundation </h6>
+                    <p class="logo_text logo_text_footer"> Startup landing template </p>
+                </div>
+            </div>
+            <p class="footer_info"> 
+                Foundation is a website template for 
+                startups and small teams. It helps to build a website in no time.
+            </p>
+            <div class="footer_img">
+           <img src="./img/footer_img/AppStore.png" alt="AppStore logo">
+           <img src="./img/footer_img/GooglePlay.png" alt="Google Play logo">
+            </div>
+        </div>
+       
+    
+
         <div class="footer_navigation">
             <nav> 
-            <ul class="footer_nav_title"> About Us
+            <ul class="logo_title"> Product 
                 <li> <a class= "footer_nav" href=""> Acquere user</a> </li>
                 <li> <a class= "footer_nav" href=""> Content Marketing</a> </li>
                 <li> <a class= "footer_nav" href=""> Website Templates</a> </li>
@@ -577,38 +423,100 @@
             </ul>
             </nav>
         </div>
-        <div class="footer_navigation">
+        <div class="footer_navigation_second_block">
             <nav> 
-            <ul class="footer_nav_title"> Our Information
+            <ul class="logo_title logo_title_footer"> Company
                 <li> <a class= "footer_nav" href=""> About Foundation</a> </li>
                 <li> <a class= "footer_nav" href=""> Brand Guidelines</a> </li>
                 <li> <a class= "footer_nav" href=""> Press Kitt</a> </li>
                 <li> <a class= "footer_nav" href=""> Suppoort</a> </li>
-             </ul>
-            </nav>
-        </div>
-        <div class="footer_navigation">
-            <nav> 
-            <ul class="footer_nav_title"> My account
-                <li> <a class= "footer_nav" href=""> Support Center </a> </li>
-                <li> <a class= "footer_nav" href=""> Customer Support</a> </li>
-                <li> <a class= "footer_nav" href=""> Press Kitt</a> </li>
-                <li> <a class= "footer_nav" href=""> Suppoort</a> </li>
-             </ul>
-            </nav>
-        </div>
-        <div class="footer_navigation">
-            <nav> 
-            <ul class="footer_nav_title"> Policy
-                <li> <a class= "footer_nav" href=""> Application security </a> </li>
-                <li> <a class= "footer_nav" href=""> Software principles</a> </li>
-                <li> <a class= "footer_nav" href=""> Unwanted software policy</a> </li>
-                <li> <a class= "footer_nav" href=""> Responsible supply chain </a> </li>
             </ul>
-             </nav>
+            </nav>
         </div>
     </div>
-</footer>
+    <div>
+        <div class="footer_line"> </div>
+       
+            <div class="container flex socialmedia"> 
+                <div class="footer_flex">
+                    <p class ="footer_item"> Terms  </p>
+                    <p class ="footer_item"> Privacy </p>
+                    <p class ="footer_item"> License </p>
+                </div>
+                <nav class="footer_socialmedia">
+                    <a href="https://www.facebook.com/" class="footer_follow_item"> <img src="./img/footer_img/icon-fb.png"
+                        alt="facebook icon"> </a>
+                    <a href="https://www.instagram.com/" class="footer_follow_item"><img src="./img/footer_img/icon-twitter.png"
+                        alt="twitter icon"></a>
+                    <a href="https://www.youtube.com" class="footer_follow_item"><img src="./img/footer_img/LinkedIn.png" 
+                        alt="youtube icon"></a>
+                </nav>
+            </div>
+    </div>
+   
+</footer>  
+
+<div class="modal-overlay_get_start">
+    <div class="modal_start">
+        <div class="logo">
+            <img  src="./img/header/logo.svg" alt="logo">
+            <div>
+                <h6 class="logo_title"> Foundation </h6>
+                <p class="logo_text"> Startup landing template </p>
+                <p class="info_text"> Build stunning websites & apps. </p>
+            </div>
+        </div>
+        <form class="form_trial" method="POST">
+            <div>
+                <input class="input_free_trial" placeholder="Your name" type="text" id="name">
+                <p id="error-name" class="error-message"> </p>
+            </div> 
+            <div>
+                <input class="input_free_trial" id="email" placeholder ="Enter your email" type="email">
+                <p id="error-email" class="error-message"></p>
+            </div>
+                <button class="button button_trial"> SEND </button>
+        </form>
+        <p class="close"> x </p>
+    </div>
+</div>
+
+
+
+
+
+   
+           
+ 
+    
+
+<div class="modal-overlay">
+    <div class="modal">
+        <div class="logo">
+            <img  src="./img/header/logo.svg" alt="logo">
+            <div>
+                <h6 class="logo_title"> Foundation </h6>
+                <p class="logo_text"> Startup landing template </p>
+            </div>
+        </div>
+        <div>
+            <h1 class="main_title"> Build  websites & apps </h1>
+            <p class="main_text">
+                Create live segments and target the right people for messages </p>
+        </div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod necessitatibus, beatae corrupti provident debitis odit quam distinctio? Similique quasi dolores saepe ut quod, labore molestiae, voluptas itaque error explicabo dolore? Quisquam libero vel alias. Veritatis minus ex sed quisquam ad, iste corrupti explicabo enim. Quo, accusantium?
+        </p>
+        <p class="close"> x </p>
+    </div>
+</div>
+
+<div id="up">
+    <span> > </span>
+</div>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
@@ -616,10 +524,8 @@ integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/i
 crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-
-
-<script src="script/script.js"> </script>
-
-</body>
+<script src="./script/script.js"> </script>
+<script src="./script/bxslider.js"></script>
+<script src="./script/modal.js"> </script>
+<script src="./script/upButton.js"> </script>
 </html>
