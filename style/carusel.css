@@ -1,25 +1,67 @@
-
-.bx-wrapper{
-    box-shadow: none;
-    text-align: center;
-    max-width: 225px;
-    margin-top: 34px;
-    border: 0;
-    box-shadow: none;
-    height: 48px;
+.slideshow-container{
+   
+    position: relative;
+    margin: auto;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
-    width: 15px;
-    height: 15px;
+.slides_cards{
+   justify-content: center;
+   margin-left: 300px;
+}
+.prew, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(69, 66, 66);
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prew{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    top: 50%;
+
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(62, 55, 55, 0.8);
+
+}
+
+.text{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    top:0;
+    position:absolute;
+}
+
+.dot{
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
     border-radius: 50%;
-    background-color: rgba(0,0,0,0.2);}
-    
-.bx-wrapper .bx-pager.bx-default-pager a.active, 
-.bx-wrapper .bx-pager.bx-default-pager a:focus, 
-.bx-wrapper .bx-pager.bx-default-pager a:hover {
-        background: #3142c5;
-    }
+    color: blue;
+    transition: background-color 0.6 ease;
+    background-color: blue;
+}
+.active{
+    background-color: black;
+}
 
+.dot:hover{
+    background-color: blueviolet;
 
-
+}
