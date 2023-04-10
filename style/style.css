@@ -740,8 +740,10 @@ body{
     color: rgba(43, 41, 45, 0.6);
     font-weight: 400;
 }
-.footer_line {
-   width: 3000px;
+.footer_line{
+   background-image: url(/img/footer_img/Line.png);
+   width: 100vw;
+   height: 2px;
 }
 .footer_item{
     font-size: 14px;
@@ -801,7 +803,7 @@ body{
     border-radius: 30px;
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 35%;
     transform: translate(-50%, -50%,);
 }
 .close{
